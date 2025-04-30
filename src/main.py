@@ -2,8 +2,7 @@ import os, shutil
 import sys
 from generate import generate_pages_recursive
 def main():
-    basepath = sys.argv[0] or '/'
-
+    basepath = sys.argv[1] or '/'
     def clear_directory_contents(folder_path):
         for item in os.listdir(folder_path):
             item_path = os.path.join(folder_path, item)
